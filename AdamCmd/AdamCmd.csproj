@@ -6,6 +6,7 @@
     <Authors>Jordan Hemming</Authors>
     <Company>Cathodic Protection Co Limited</Company>
     <Description>Advantech ADAM command line utitlites</Description>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

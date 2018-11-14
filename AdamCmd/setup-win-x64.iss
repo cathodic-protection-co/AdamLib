@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "AdamCmd"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "Cathodic Protection Co Limited"
 #define MyAppURL "http://www.cathodic.co.uk/"
 #define MyAppExeName "AdamCmd.exe"
@@ -21,7 +21,7 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\Cathodic\AdamCmd
 DefaultGroupName=Adam Command Line
-OutputDir=C:\Users\jordan.hemming.LAN\source\repos\AdamLib\AdamCmd\bin\Setup
+OutputDir=.\bin\Setup
 OutputBaseFilename=adamcmd-setup-win-x64
 Compression=lzma
 SolidCompression=yes
@@ -33,8 +33,8 @@ ChangesEnvironment=yes
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-Source: "C:\Users\jordan.hemming.LAN\source\repos\AdamLib\AdamCmd\bin\Release\netcoreapp2.1\publish\win-x64\AdamCmd.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\jordan.hemming.LAN\source\repos\AdamLib\AdamCmd\bin\Release\netcoreapp2.1\publish\win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: ".\bin\Release\netcoreapp2.1\publish\win-x64\AdamCmd.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\bin\Release\netcoreapp2.1\publish\win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
