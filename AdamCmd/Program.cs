@@ -13,7 +13,7 @@ namespace AdamCmd
     {
         static int Main(string[] args)
         {
-            return CommandLine.Parser.Default.ParseArguments<TypeOptions, ReadAIOptions, ReadDOOptions, WriteDOOptions, InteractiveOptions, DetectPortsOptions>(args)
+            return CommandLine.Parser.Default.ParseArguments<TypeOptions, ReadAIOptions, ReadDOOptions, WriteDOOptions, ReadAOOptions, WriteAOOptions, InteractiveOptions, DetectPortsOptions>(args)
                 .MapResult(
                     (TypeOptions opts) => RunType(opts),
                     (ReadAIOptions opts) => RunReadAI(opts),
